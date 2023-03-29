@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Titillium+Web:wght@400;600;700&display=swap" rel="stylesheet">
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Login</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div id="page" class="flex">
+      <div>
+        <header>
+          <img src="./assets/logonike.svg" alt="" />
+        </header>
+        <main>
+          <div id="headline">
+            <h1>Acesso a NIKE</h1>
+            <p>
+              Faça login ou registre-se para comprar seus artigos NIKE
+              <br>
+              ainda hoje. &nbsp; <b>JUST DO IT</b>.
+            </p>
+          </div>
+          <form> 
+            <div class="input-wrapper">
+              <label for="email">E-mail</label>
+              <input placeholder="Digite seu e-mail" id="email" type="email" name="email" required />
+            </div>
+
+            <div class="input-wrapper">
+              <div class="label-wrapper">
+                <label for="senha">Senha</label>
+                
+              </div>
+               
+             
+             <input placeholder="Digite sua senha" type="password" id="senha" />
+              
+              <img onclick="togglePassword()"
+              class="eye" 
+              src="./assets/eye.svg" 
+              alt="" />
+
+              <img onclick="togglePassword()"
+              class="eye hide"
+              src="./assets/eye-off.svg" 
+              alt="" />
+            </div>
+
+            <button type="submit">Entrar</button>
+
+            <div class="create-account">
+              <div class="ainda">
+                Ainda não tem uma conta?
+                <a href="#" style="color: #9558FE">Inscreva-se</a>
+              </div>
+              <a  href="#" style="color: #9558FE"> Esqueceu a senha?</a>
+            </div>
+          </form>
+        </main>
+      </div>
+      <img class="imgg" src="./assets/justdoit.jpg"  alt="">
+    </div>
+    <script>
+
+    function togglePassword(){
+      document.querySelectorAll(".eye")
+      .forEach((eye) => eye.classList.toggle("hide"))
+      const type= 
+      senha.getAttribute('type') == "password" ? 'text' : "password"
+      
+        senha.setAttribute('type', type)
+      }
+    
+
+      
+              
+    </script>
+  </body>
+</html>
